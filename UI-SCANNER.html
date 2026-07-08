@@ -1,8 +1,38 @@
-<scanner>
+<html>
+<head>
+<title>SCANNER-MA³ (((WIEIMMER)))</title>
+</head>
+
+<body>
+
+<section id="scanner">
+
   <station>MA³</station>
   <code>φ∞</code>
   <task>Unendlichkeit anwenden</task>
-  <pipeline>P4 → Pe</pipeline>
-  <execute>φ∞(input)</execute>
-  <output>limit(input)</output>
-</scanner>
+
+  <pipeline>
+    P4 → Pe
+  </pipeline>
+
+  <input>
+    value = {{INPUT}}
+  </input>
+
+  <execute>
+    step_P4 = start({{INPUT}})
+    result  = φ∞(step_P4)
+  </execute>
+
+  <output>
+    limit = {{RESULT}}
+  </output>
+
+  <return>
+    SEEu.md ← {{RESULT}}
+  </return>
+
+</section>
+
+</body>
+</html>
